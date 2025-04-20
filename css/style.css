@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(31, 17, 17);
+  text-align: center;
+  margin: 5px;
+  color: white;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no hay suficiente espacio */
+  gap: 1em; /* Equivalente a grid-gap */
+  background-color: rgb(20, 20, 20);
+}
+
+.contenedor > div {
+  background-color: rgb(0, 0, 0);
+  color: rgb(21, 21, 21);
+  margin: 5px;
+}
+/* */
+img{
+  border-radius: 40px;
+}
+.item{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 40px;
+
+}
+.item:hover{
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.img{
+  width: 200px;
+}
+.txt{
+  text-align: left;
+  font-family: "Special Gothic Condensed One", sans-serif;
+  font-weight: 400;
+  font-style: normal;  
+}
+
+.modern-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #350b0b, #7e1919, #642c2c);
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo {
+  font-size: 6ch;
+  font-family: "Special Gothic Condensed One", sans-serif;
+  font-style: normal;
+}
+
+.social-icons a {
+  width: 12132px;
+  color: white;
+  margin-left: 20px;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #bc0000d6;
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .modern-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+
+.responsivo {
+  width: 100%;
+  height: 300px;
+  background-image: url('../imagenes/responsivo.png');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 40px;
+}
+.responsivo:hover{
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 600px) {
+  .responsivo {
+    background-image: url('../imagenes/responsvio2.png');
+  }
+}
